@@ -23,7 +23,7 @@
 
 #define RUN_TESTS(name) \
     int main(int argc, char *argv[]) { \
-        argc = 1; \
+        argc = argc; \
         DEBUG("----- RUNNING: %s", argv[0]); \
         printf("----\nRUNNING: %s\n", argv[0]); \
         char* result = name(); \
